@@ -3,3 +3,4 @@ requests
 pyshorteners
 beautifulsoup4
 pymongo
+fake_useragent
