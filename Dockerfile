@@ -21,9 +21,6 @@ RUN chown -R appuser:appuser /app
 # Switch to non-root user
 USER appuser
 
-# Expose port 5050 for Flask app
-EXPOSE 5050
-
 # Use bash shell for start.sh
 SHELL ["/bin/bash", "-c"]
 
