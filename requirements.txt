@@ -1,0 +1,4 @@
+flask
+requests
+pyshorteners
+beautifulsoup4
