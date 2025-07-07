@@ -2,3 +2,4 @@ flask
 requests
 pyshorteners
 beautifulsoup4
+pymongo
