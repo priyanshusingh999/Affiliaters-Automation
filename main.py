@@ -87,7 +87,7 @@ def convert_affiliate_link(link):
     except Exception as e:
         print("❌ Error in affiliate link:", e)
 
-    return link  # fallback original
+    return long_url  # fallback original
 
 def post_to_telegram(product, affiliate_link):
     global last_posted_product
