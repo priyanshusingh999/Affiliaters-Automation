@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 import os
 
-MONGODB_URI = os.getenv("MONGODB_URI", "mongodb+srv://ritik456:la4PkxIkMcLFELOm@cluster0.7wdhsi1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+MONGODB_URI = os.getenv("MONGODB_URI", "")
 
 # MongoDB se credentials fetch karna
 mongo_client = MongoClient(MONGODB_URI)
