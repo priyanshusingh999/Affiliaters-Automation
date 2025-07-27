@@ -19,9 +19,9 @@ threading.Thread(target=run_flask).start()
 # ============================ ⚡ Flipkart Auto-Poster by @priyanshusingh999 ===================================================================
 
 def get_random_flipkart_url():
-    with open("flipkart_urls.txt") as f:
-        urls = f.readlines()
-    return random.choice(urls).strip()
+    prdt_list = ["mens-footwear", "mens-tshirts", "clothing-and-accessories", "ac", "begs", "led+tv", "mobile+phones", "jeans","half+pant","tshirts","shirts","gaming+laptop","printer","refrigerator", "ceiling+fan", "fitness+band", "tablet", "monitor", "laptop", "shoes", "earbuds", "headphones", "smartwatch", "power+bank", "gaming+keyboard", "trimmer", "hair+dryer", "pendrive", "cocking+oil", "kitchen-appliances", "washing-machine", "mens-footwear", "clothing-and-accessories", "beauty-and-grooming", ]
+    urls = f"https://www.flipkart.com/search?q={random.choice(prdt_list)}"
+    return urls
 
 def fetch_soup(url):
     ua = UserAgent()
